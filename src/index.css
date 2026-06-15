@@ -1,7 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
 
 body {
-  @apply font-inter transition-all duration-300;
+  @apply font-sans;
+  /* transition-all та duration-300 краще додати через класи в JSX,
+     але якщо потрібно глобально — залиште */
+  transition-property: all;
+  transition-duration: 300ms;
 }
