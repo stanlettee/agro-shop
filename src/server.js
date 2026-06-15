@@ -1,32 +1,23 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
-const products = [
-  {
-    id: 1,
-    name: "Гербіцид Мастер Пауєр",
-    category: "Гербіциди",
-    shortDescription: "Післясходовий гербіцид для захисту кукурудзи.",
-    description: "Унікальний гербіцид, який контролює повний спектр бур'янів.",
-    benefits: ["Повний контроль бур'янів", "Безпека для культури"],
-    image: "[https://images.unsplash.com/photo-1625246333195-78d9c38ad451?w=500](https://images.unsplash.com/photo-1625246333195-78d9c38ad451?w=500)"
-  },
-  {
-    id: 2,
-    name: "Фунгіцид Хорус",
-    category: "Фунгіциди",
-    shortDescription: "Надійний захист садів від хвороб.",
-    description: "Надзвичайний системний фунгіцид для захисту плодових культур.",
-    benefits: ["Діє при низьких температурах", "Лікувальна дія"],
-    image: "[https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?w=500](https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?w=500)"
-  }
-];
+// Serve static files from the 'dist' folder (or 'build' for CRA)
+app.use(express.static(path.join(__dirname, 'dist')));
 
+// GET /api/products endpoint
 app.get('/api/products', (req, res) => {
+  const products = require('./src/data/products.json');
   res.json(products);
 });
 
+// Fallback route to serve index.html for client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
