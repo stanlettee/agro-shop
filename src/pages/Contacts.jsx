@@ -11,6 +11,23 @@ const Contacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
+      /* 
+        NOTE FOR DEVELOPER (English_Ireland):
+        Currently, feedback messages are processed solely on the client-side (UI level).
+        They do not go to any external server or inbox yet.
+        To send them to an actual backend or email service, you can integrate an API call here:
+        
+        fetch('https://your-api-endpoint.com/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => console.log('Success:', data))
+        .catch(error => console.error('Error:', error));
+      */
+      console.log('Feedback submitted locally:', formData);
+
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
