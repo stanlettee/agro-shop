@@ -2,22 +2,17 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000;
 
-// Serve static files from the 'dist' folder (or 'build' for CRA)
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static files from the React build directory
+app.use(express.static(path.join(__dirname, '../build')));
 
-// GET /api/products endpoint
-app.get('/api/products', (req, res) => {
-  const products = require('./src/data/products.json');
-  res.json(products);
-});
-
-// Fallback route to serve index.html for client-side routing
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
