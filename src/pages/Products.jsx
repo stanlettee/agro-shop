@@ -1,20 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import products from '../data/products.json';
-import ProductCard from '../components/ProductCard';
 
 const Products = () => {
-  const [category, setCategory] = React.useState('All');
-
-  const filteredProducts =
-    category === 'All'
-      ? products
-      : products.filter((p) => p.category === category);
-
   return (
-    <div className="bg-green-600 text-white min-h-screen">
-      <section className="container mx-auto py-12 px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Продукти</h2>
+    <Layout>
+      <section className="container mx-auto py-20">
+        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b-2 border-emerald-500">Наші продукти</h1>
 
         {/* Фільтрація */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
@@ -37,21 +28,21 @@ const Products = () => {
         </div>
 
         {/* Сітка продуктів */}
-        {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((product) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
               <Link to={`/products/${product.id}`} key={product.id}>
                 <ProductCard product={product} />
               </Link>
-            ))}
-          </div>
-        ) : (
-          <p className="text-center text-lg text-white/80">
-            Немає продуктів у цій категорії.
-          </p>
-        )}
+            ))
+          ) : (
+            <p className="text-center text-lg text-white/80">
+              Немає продуктів у цій категорії.
+            </p>
+          )}
+        </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 
