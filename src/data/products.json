@@ -6,7 +6,7 @@
     "shortDescription": "Високоврожайний гібрид",
     "description": "Кукурудза Агро-500  це сучасний гібрид, стійкий до посухи та шкідників. Рекомендована густота посіву 70-80 тис./га. Потенційна врожайність до 12 т/га.",
     "benefits": ["Посухостійкість", "Швидкий старт", "Висока врожайність"],
-    "image": "https://images.unsplash.com/photo-1551754655-cd27e38d20f6?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "shortDescription": "Високоврожайний гібрид",
     "description": "Макула Агро-800  це сучасний гібрид, стійкий до посухи та шкідників. Рекомендована густота посіву 55-65 тис./га. Потенційна врожайність до 14 т/га.",
     "benefits": ["Посухостійкість", "Швидкий старт", "Висока врожайність"],
-    "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "shortDescription": "Контроль захисту від шкідників та посухи",
     "description": "Фосфорно-кальційна підгрунка Агро-100 забезпечує надійний захист рослин від шкідників та посухи. Рекомендована кількість 250-300 кг/га.",
     "benefits": ["Захист від шкідників", "Посухостійкість", "Висока продуктивність"],
-    "image": "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "shortDescription": "Ускладнення руху шкідників",
     "description": "Контрольна підгрунка Агро-200 забезпечує ускладнення руху шкідників, що стимулює ефективне використання захисних препаратів. Рекомендована кількість 150-200 кг/га.",
     "benefits": ["Ускладнення руху шкідників", "Захист від посухи", "Висока продуктивність"],
-    "image": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "shortDescription": "Швидкий вплив на шкідників",
     "description": "Гель-розчин Агро-300 забезпечує швидкий вплив на шкідників, що стимулює ефективне захист рослин. Рекомендована кількість 1-2 л/га.",
     "benefits": ["Швидкий вплив", "Захист від шкідників", "Висока продуктивність"],
-    "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=800&q=80"
   },
   {
     "id": 7,
