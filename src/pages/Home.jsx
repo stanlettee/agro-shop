@@ -9,7 +9,7 @@ const Home = () => {
       <section className="relative min-h-[85vh] flex items-center justify-center bg-neutral-950 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80" 
+            src={"https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80"} 
             alt="Agro field" 
             className="w-full h-full object-cover opacity-40 scale-105"
           />
