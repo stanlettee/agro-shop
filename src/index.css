@@ -1,14 +1,15 @@
-
 @import "tailwindcss";
 
 @theme {
   --font-sans: 'Inter', sans-serif;
+  --color-brand-green: #166534;
+  --color-brand-lime: #a3e635;
+  --color-brand-dark: #111827;
+  --color-brand-light: #f9fafb;
 }
 
 body {
-  @apply font-sans;
-  /* transition-all та duration-300 краще додати через класи в JSX,
-     але якщо потрібно глобально — залиште */
+  @apply font-sans bg-brand-light text-brand-dark;
   transition-property: all;
   transition-duration: 300ms;
 }
