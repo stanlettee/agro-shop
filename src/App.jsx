@@ -13,13 +13,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>} />
-        <Route path="/products" element={<Layout><Products /></Layout>} />
-        <Route path="/products/:id" element={<Layout><ProductDetail /></Layout>} />
-        <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/news" element={<Layout><News /></Layout>} />
-        <Route path="/news/:id" element={<Layout><NewsDetail /></Layout>} />
-        <Route path="/contacts" element={<Layout><Contacts /></Layout>} />
+        <Route path="/agro-shop/" element={<Layout><Home /></Layout>} />
+        <Route path="/agro-shop/products" element={<Layout><Products /></Layout>} />
+        <Route path="/agro-shop/products/:id" element={<Layout><ProductDetail /></Layout>} />
+        <Route path="/agro-shop/about" element={<Layout><About /></Layout>} />
+        <Route path="/agro-shop/news" element={<Layout><News /></Layout>} />
+        <Route path="/agro-shop/news/:id" element={<Layout><NewsDetail /></Layout>} />
+        <Route path="/agro-shop/contacts" element={<Layout><Contacts /></Layout>} />
         <Route path="*" element={<Layout><div>Сторінку не знайдено</div></Layout>} />
       </Routes>
     </Router>

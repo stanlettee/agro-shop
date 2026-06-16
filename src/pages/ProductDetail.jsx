@@ -13,7 +13,7 @@ const ProductDetail = () => {
         <div className="text-center">
           <h1 className="text-3xl font-black text-neutral-900">Продукт не знайдено</h1>
           <p className="text-neutral-500 mt-2 mb-6">Вибачте, запитуваний продукт не існує в нашому каталозі.</p>
-          <Link to="/products" className="px-6 py-2.5 bg-brand-green text-white rounded-full font-semibold">
+          <Link to="/agro-shop/products" className="px-6 py-2.5 bg-brand-green text-white rounded-full font-semibold">
             Назад до продуктів
           </Link>
         </div>
@@ -31,9 +31,9 @@ const ProductDetail = () => {
       <section className="bg-neutral-100 border-b border-neutral-200/50 py-4">
         <div className="container mx-auto px-4 md:px-6">
           <nav className="flex space-x-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-            <Link to="/" className="hover:text-brand-green transition">Головна</Link>
+            <Link to="/agro-shop/" className="hover:text-brand-green transition">Головна</Link>
             <span>/</span>
-            <Link to="/products" className="hover:text-brand-green transition">Продукти</Link>
+            <Link to="/agro-shop/products" className="hover:text-brand-green transition">Продукти</Link>
             <span>/</span>
             <span className="text-neutral-900 truncate max-w-[200px]">{product.name}</span>
           </nav>
@@ -91,7 +91,7 @@ const ProductDetail = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedProducts.map(relatedProduct => (
                 <div key={relatedProduct.id} className="group bg-white border border-neutral-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300">
-                  <Link to={`/products/${relatedProduct.id}`} className="block">
+                  <Link to={`/agro-shop/products/${relatedProduct.id}`} className="block">
                     <div className="aspect-video bg-neutral-100 overflow-hidden">
                       <img src={relatedProduct.image} alt={relatedProduct.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </div>

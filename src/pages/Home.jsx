@@ -28,13 +28,13 @@ const Home = () => {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
-              to="/products" 
+              to="/agro-shop/products" 
               className="w-full sm:w-auto px-8 py-4 bg-brand-lime text-brand-green font-bold rounded-full shadow-lg shadow-brand-lime/25 hover:bg-white hover:text-brand-green hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 text-center"
             >
               Перейти до продуктів
             </Link>
             <Link 
-              to="/about" 
+              to="/agro-shop/about" 
               className="w-full sm:w-auto px-8 py-4 bg-white/10 text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition duration-300 text-center backdrop-blur-sm"
             >
               Про компанію
@@ -63,7 +63,7 @@ const Home = () => {
               </p>
             </div>
             <Link 
-              to="/products" 
+              to="/agro-shop/products" 
               className="mt-8 inline-flex items-center text-brand-green font-semibold text-sm hover:text-emerald-500 transition duration-300"
             >
               Дізнатись більше <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
@@ -81,7 +81,7 @@ const Home = () => {
               </p>
             </div>
             <Link 
-              to="/products" 
+              to="/agro-shop/products" 
               className="mt-8 inline-flex items-center text-brand-green font-semibold text-sm hover:text-emerald-500 transition duration-300"
             >
               Дізнатись більше <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
@@ -99,7 +99,7 @@ const Home = () => {
               </p>
             </div>
             <Link 
-              to="/products" 
+              to="/agro-shop/products" 
               className="mt-8 inline-flex items-center text-brand-green font-semibold text-sm hover:text-emerald-500 transition duration-300"
             >
               Дізнатись більше <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
@@ -117,7 +117,7 @@ const Home = () => {
               <p className="text-3xl md:text-4xl font-black tracking-tight text-neutral-900 mt-2">Останні новини</p>
             </div>
             <Link 
-              to="/news" 
+              to="/agro-shop/news" 
               className="px-6 py-2.5 bg-white text-neutral-800 border border-neutral-200 hover:border-brand-green hover:text-brand-green font-semibold rounded-full shadow-sm hover:shadow transition duration-300 text-sm"
             >
               Всі новини
@@ -132,7 +132,7 @@ const Home = () => {
                     {new Date(item.date).toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' })}
                   </span>
                   <h3 className="text-xl font-bold text-neutral-900 mb-3 hover:text-brand-green transition leading-snug">
-                    <Link to={`/news/${item.id}`}>{item.title}</Link>
+                    <Link to={`/agro-shop/news/${item.id}`}>{item.title}</Link>
                   </h3>
                   <p className="text-neutral-500 text-sm leading-relaxed line-clamp-3">
                     {item.excerpt}
@@ -140,7 +140,7 @@ const Home = () => {
                 </div>
                 <div className="px-6 pb-6 pt-2 border-t border-neutral-50/50">
                   <Link 
-                    to={`/news/${item.id}`} 
+                    to={`/agro-shop/news/${item.id}`} 
                     className="text-brand-green hover:text-emerald-500 text-sm font-semibold transition inline-flex items-center"
                   >
                     Читати далі <span className="ml-1.5">→</span>

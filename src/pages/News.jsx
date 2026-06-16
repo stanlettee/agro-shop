@@ -27,21 +27,21 @@ const News = () => {
                   {new Date(item.date).toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </span>
                 <Link 
-                  to={`/news/${item.id}`} 
+                  to={`/agro-shop/news/${item.id}`} 
                   className="text-xs font-bold uppercase tracking-wider bg-emerald-50 text-brand-green px-3 py-1 rounded-full hover:bg-brand-lime transition"
                 >
                   Читати повністю
                 </Link>
               </div>
               <h3 className="text-2xl font-black text-neutral-900 hover:text-brand-green transition mb-3 leading-tight">
-                <Link to={`/news/${item.id}`}>{item.title}</Link>
+                <Link to={`/agro-shop/news/${item.id}`}>{item.title}</Link>
               </h3>
               <p className="text-neutral-600 leading-relaxed text-sm mb-6">
                 {item.excerpt}
               </p>
               <div className="flex items-center">
                 <Link 
-                  to={`/news/${item.id}`} 
+                  to={`/agro-shop/news/${item.id}`} 
                   className="text-brand-green font-semibold text-sm inline-flex items-center hover:text-emerald-500 transition"
                 >
                   Переглянути матеріал <span className="ml-1.5">→</span>

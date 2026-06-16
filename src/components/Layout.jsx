@@ -19,11 +19,11 @@ const Layout = ({ children }) => {
   }, [location]);
 
   const navLinks = [
-    { path: '/', label: 'Головна' },
-    { path: '/products', label: 'Продукти' },
-    { path: '/about', label: 'Про нас' },
-    { path: '/news', label: 'Новини' },
-    { path: '/contacts', label: 'Контакти' }
+    { path: '/agro-shop/', label: 'Головна' },
+    { path: '/agro-shop/products', label: 'Продукти' },
+    { path: '/agro-shop/about', label: 'Про нас' },
+    { path: '/agro-shop/news', label: 'Новини' },
+    { path: '/agro-shop/contacts', label: 'Контакти' }
   ];
 
   return (
@@ -118,11 +118,11 @@ const Layout = ({ children }) => {
             <div>
               <h4 className="text-white font-bold tracking-wider uppercase text-xs mb-4 border-l-2 border-brand-lime pl-2">Навігація</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/" className="hover:text-white transition duration-300">Головна</Link></li>
-                <li><Link to="/products" className="hover:text-white transition duration-300">Продукти</Link></li>
-                <li><Link to="/about" className="hover:text-white transition duration-300">Про нас</Link></li>
-                <li><Link to="/news" className="hover:text-white transition duration-300">Новини</Link></li>
-                <li><Link to="/contacts" className="hover:text-white transition duration-300">Контакти</Link></li>
+                <li><Link to="/agro-shop/" className="hover:text-white transition duration-300">Головна</Link></li>
+                <li><Link to="/agro-shop/products" className="hover:text-white transition duration-300">Продукти</Link></li>
+                <li><Link to="/agro-shop/about" className="hover:text-white transition duration-300">Про нас</Link></li>
+                <li><Link to="/agro-shop/news" className="hover:text-white transition duration-300">Новини</Link></li>
+                <li><Link to="/agro-shop/contacts" className="hover:text-white transition duration-300">Контакти</Link></li>
               </ul>
             </div>
             <div>
